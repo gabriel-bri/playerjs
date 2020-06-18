@@ -104,6 +104,8 @@
 	function nextSong() {
 		console.log("Próxima música...")
 		//Incrementa o valor da música atual
+		iconePlay.classList.remove("fa-play");
+		iconePlay.classList.add("fa-pause");
 		currentSong++;
 		
 		//Verifica se a música atual é maior do que o número de dados do array - 1
