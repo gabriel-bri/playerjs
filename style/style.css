@@ -1,0 +1,209 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Escopo';
+	src: url(../font/Roboto_Mono/RobotoMono-Medium.ttf);
+}
+@font-face {
+	font-family: 'Title';
+	src: url(../font/Anton/Anton-Regular.ttf);
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: rgb(182, 182, 182);
+	font-family: 'Escopo';
+	display: flex;
+	justify-content: center;
+}
+
+
+#player {
+	margin-left: 20px;
+}
+
+#player #songTitle{
+	font-size: 0.80rem;
+}
+
+
+#fill {
+	height: 5px;
+	width: 0;
+	background: royalblue;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	z-index: 1;
+	margin-top: -5px;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background-image: url(../postersDesfocados/Poster1.jpg);
+	background-size: cover;
+}
+
+.sub-container {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#poster {
+	width: 70%;
+	height: 70%;
+	font-family: 'Title';
+	color: black;
+	background-image: url(../posters/Poster1.jpg);
+	background-size: cover;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.336);
+}
+
+.transparente {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.473);
+}
+
+.title {
+	padding: 00px 0px 0px 100px;
+	font-size: 3rem;
+	color: white;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+}
+
+.sub-title {
+	padding: 00px 0px 0px 100px;
+	font-family: "Escopo";
+	font-size: 0.80rem;
+	color: white;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+}
+
+.playing-bar {
+	display: grid;
+	grid-template-columns: 1.5fr 2fr 1.5fr;
+	align-items: center;
+	width: 100%;
+	height: 6rem;
+	background: rgba(53, 53, 53, 0.925);
+	box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.404);
+	z-index: 1;
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+}
+
+#image {
+	width: 60px;
+	height: 60px;
+	background-image: url(../posters/Poster1.jpg);
+	background-size: cover;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.452);
+}
+
+.status {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#buttons {
+	margin: 10px 0px 10px 0px;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+#buttons div {
+	margin: 0px 15px 0px 15px;
+	font-size: 0.75rem;
+}
+
+#buttons div:hover {
+	color: royalblue;
+	cursor: pointer;
+	border-color: royalblue;
+}
+
+#play {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgb(182, 182, 182);
+}
+
+.sub-fill {
+	height: 5px;
+	width: 100%;
+	background-color: rgba(82, 82, 82, 0.356);
+	border-radius: 20px;
+}
+
+.ball {
+	background: rgb(215, 217, 223);
+	height: 12px;
+	width: 12px;
+	margin-left: 10px;
+	position: absolute;
+	border-radius: 100%;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+#currentTime {
+	padding: 6px;
+	font-size: 0.80rem;
+}
+
+.manager {
+	display: flex;
+	justify-content: center;
+}
+
+#volume {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100px;
+	padding: 5px 20px 5px 20px;
+	background-color:  rgb(182, 182, 182);
+	color: rgba(53, 53, 53, 0.87);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.568);
+	border-radius: 10px;
+}
+
+#volume div {
+	margin: 0px 10px 0px 10px;
+}
+
+#volume div:hover {
+	color: royalblue;
+	cursor: pointer;
+	border-color: royalblue;
+}
+
+.px-10 {
+	padding: 0px 10px 0px 10px;
+}

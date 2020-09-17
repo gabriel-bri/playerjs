@@ -20,3 +20,10 @@ Abra seu editor favorito e vamos codar!
 
 # Ambientes de testes
 Você pode testar em tempo real aqui: http://appseclab.000webhostapp.com/labs/desenvolvimento/playerjs
+
+# Novas mudanças feitas:
+
+  - Mudança de Design.
+  - Ainda falta aplicar a responsividade.
+  - Coloquei um pacote do Font-Awesome na raiz do projeto.
+  - Fiz algumas alterações no Css e no JS também.
