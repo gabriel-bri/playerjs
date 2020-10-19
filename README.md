@@ -23,7 +23,7 @@ Você pode testar em tempo real aqui: http://appseclab.000webhostapp.com/labs/de
 
 # Novas mudanças feitas:
 
-  - Mudança de Design.
-  - Ainda falta aplicar a responsividade.
-  - Coloquei um pacote do Font-Awesome na raiz do projeto.
+  - Design responsivo.
+  - Removi o pacote do Font-Awesome na raiz do projeto.
   - Fiz algumas alterações no Css e no JS também.
+  - Coloquei um Link de Material-Icon do Google no Head.

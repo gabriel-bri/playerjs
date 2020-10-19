@@ -2,7 +2,7 @@
 	//Cria um array com o nome das músicas
 	let musics = ["../music/Chapa - Emicida.mp3", "../music/19 The Miracle (Of Joey Ramone) - U2.mp3", "../music/Prismo Weakness - NCS Release.mp3", "../music/Nothing is impossible - Planet Shakes.mp3"];
 	let nomeMusics = ["Chapa", "19 The Miracle (Of Joey Ramone)", "Prismo Weakness", "Nothing is impossible"];
-	let cantores = ["Emicida | 2016 | Rap", "U2 | 2014 | Rock", "NCS Release | 2017 | Eletrônica", "Planet Shakes | 2016 | Rock"];
+	let cantores = ["Emicida • 2016 • Rap", "U2 • 2014 • Rock", "NCS Release • 2017 • Eletrônica", "Planet Shakes • 2016 • Rock"];
 	
 	//Cria um array com a capa das músicas
 	let poster = ["url('../posters/Poster1.jpg')","url('../posters/Poster2.jpg')","url('../posters/Poster3.jpg')", "url('../posters/Poster4.jpg')"];
@@ -15,6 +15,8 @@
 	let posterSubTitle = document.querySelector("#posterSubTitle");
 
 	let posterDiv = document.querySelector("#poster");
+
+	let autorMobile = document.querySelector("#autorMobile");
 	
 	let fillbar = document.querySelector("#fill");
 	
@@ -25,7 +27,7 @@
 	
 	let posterFundo = document.querySelector("#posterFundo");
 	let title_page = document.getElementsByTagName("title")[0];
-	let iconePlay = document.querySelector("#play i");
+	let iconePlay = document.querySelector("#play span");
 
 	let bgImg = document.querySelector("#poster");
 	let posterSong = document.querySelector("#image");
@@ -40,6 +42,7 @@
 		songTitle.textContent = nomeMusics[currentSong];
 		posterTitle.textContent = nomeMusics[currentSong];
 		posterSubTitle.textContent = cantores[currentSong];
+		autorMobile.textContent = cantores[currentSong];
 		song.play();
 		title_page.text = "Tocando agora - " + musics[currentSong];
 	}
@@ -49,8 +52,8 @@
 			//Verifica se a música está tocando, caso contrário, 
 			//toca a música e muda seus ícones
 			song.play();
-			iconePlay.classList.remove("fa-play");
-			iconePlay.classList.add("fa-pause")
+			iconePlay.innerText = 'play_arrow';
+			iconePlay.innerText = 'pause';
 			console.log("Música tocando");
 		}
 		
@@ -58,8 +61,8 @@
 			//Caso a primeira condição não seja atendida,
 			//parte para o ELSE e pausa a música realizando a troca dos icones
 			song.pause();
-			iconePlay.classList.remove("fa-pause");
-			iconePlay.classList.add("fa-play")
+			iconePlay.innerText = 'pause';
+			iconePlay.innerText = 'play_arrow';
 			console.log("Música pausada");
 		}
 	}
@@ -98,14 +101,14 @@
 		
 		min = (min < 10) ? "0" + min : min;
 		sec = (sec < 10) ? "0" + sec : sec;
-		currentTime.textContent += "/" + min + ":" + sec;
+		currentTime.innerHTML += "<span class='cor-principal'> • </span>" + min + ":" + sec;
 	}
 	
 	function nextSong() {
 		console.log("Próxima música...")
 		//Incrementa o valor da música atual
-		iconePlay.classList.remove("fa-play");
-		iconePlay.classList.add("fa-pause");
+		iconePlay.innerText = 'play_arrow';
+		iconePlay.innerText = 'pause';
 		currentSong++;
 		
 		//Verifica se a música atual é maior do que o número de dados do array - 1
