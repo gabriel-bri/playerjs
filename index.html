@@ -2,7 +2,8 @@
 <html lang="PT-BR">
 <head>
 	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Player de música</title>
 </head>
@@ -29,13 +30,16 @@
 					<div id="songTitle">
 						
 					</div>
+					<div id="autorMobile">
+
+					</div>
 				</div>
 			</div>
 			<div class="status px-10">
 				<div id="buttons">
-					<div id="pre" onclick="previousSong()"><i class="fas fa-backward"></i></div>
-					<div id="play" onclick="playOrPauseSong()"><i class="fas fa-pause"></i></div>
-					<div id="next" onclick="nextSong()"><i class="fas fa-forward"></i></div>
+					<div id="pre" onclick="previousSong()"><span class="material-icons">skip_previous</span></div>
+					<div id="play" onclick="playOrPauseSong()"><span class="material-icons">pause</span></div>
+					<div id="next" onclick="nextSong()"><span class="material-icons">skip_next</span></div>
 				</div>
 				<div id="seek-bar">
 					<div class="sub-fill"></div>
@@ -43,13 +47,17 @@
 						<div class="ball"></div>
 					</div>
 				</div>
-				<div id="currentTime" class="text-align-center">00:00/00:00</div>
+				<div id="currentTime" class="text-align-center">
+					00:00
+					<span class='cor-principal'> • </span>
+					00:00
+				</div>
 			</div>
 			<div class="manager px-10">
 				<div id="volume">
-					<div id="decrease" onclick="decreaseVolume()"><i class="fas fa-volume-down"></i></div>
-					<div id="volumeIcon" onclick="mute()"><i class="fas fa-volume-mute"></i></div>
-					<div id="increase" onclick="increaseVolume()"><i class="fas fa-volume-up"></i></div>
+					<div id="decrease" onclick="decreaseVolume()"><span class="material-icons">volume_down</span></div>
+					<div id="volumeIcon" onclick="mute()"><span class="material-icons">volume_mute</span></div>
+					<div id="increase" onclick="increaseVolume()"><span class="material-icons">volume_up</span></div>
 				</div>
 			</div>
 		</div>
