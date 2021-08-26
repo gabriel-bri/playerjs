@@ -1,12 +1,12 @@
 		
 	//Cria um array com o nome das músicas
-	let musics = ["../music/Chapa - Emicida.mp3", "../music/19 The Miracle (Of Joey Ramone) - U2.mp3", "../music/Prismo Weakness - NCS Release.mp3", "../music/Nothing is impossible - Planet Shakes.mp3"];
+	let musics = ["music/Chapa - Emicida.mp3", "music/19 The Miracle (Of Joey Ramone) - U2.mp3", "music/Prismo Weakness - NCS Release.mp3", "music/Nothing is impossible - Planet Shakes.mp3"];
 	let nomeMusics = ["Chapa", "19 The Miracle (Of Joey Ramone)", "Prismo Weakness", "Nothing is impossible"];
 	let cantores = ["Emicida • 2016 • Rap", "U2 • 2014 • Rock", "NCS Release • 2017 • Eletrônica", "Planet Shakes • 2016 • Rock"];
 	
 	//Cria um array com a capa das músicas
-	let poster = ["url('../posters/Poster1.jpg')","url('../posters/Poster2.jpg')","url('../posters/Poster3.jpg')", "url('../posters/Poster4.jpg')"];
-	let posterDesfocados = ["url('../postersDesfocados/Poster1.jpg')","url('../postersDesfocados/Poster2.jpg')","url('../postersDesfocados/Poster3.jpg')", "url('../postersDesfocados/Poster4.jpg')"]
+	let poster = ["url('posters/Poster1.jpg')","url('posters/Poster2.jpg')","url('posters/Poster3.jpg')", "url('posters/Poster4.jpg')"];
+	let posterDesfocados = ["url('postersDesfocados/Poster1.jpg')","url('postersDesfocados/Poster2.jpg')","url('postersDesfocados/Poster3.jpg')", "url('postersDesfocados/Poster4.jpg')"]
 	
 	let songTitle = document.querySelector("#songTitle");
 
